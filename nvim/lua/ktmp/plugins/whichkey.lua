@@ -28,6 +28,9 @@ return {
         defaults = {
             {"<C>e", group = "hrp - win" },
             {"<leader>a", group = "hrp - add" },
+            {"<leader>s", group = "splits" },
+            {"<leader>t", group = "tabs" },
+            {"<leader>a", group = "hrp - add" },
             {"<leader><C-H>", group = "hrp - rep 1"},
             {"<leader><C-T>", group = "hrp - rep 2"},
             {"<leader><C-N>", group = "hrp - rep 3"},
