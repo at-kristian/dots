@@ -42,6 +42,9 @@ return {
             {"<leader>u", group = "undotree" },
             {"<leader>y", group = "yank sys" },
             {"<leader>Y", group = "yank sys" },
+            {"<leader>w", group = "wiki" },
+            {"<leader>ww", group = "wiki - current" },
+            {"<leader>wt", group = "wiki - tab" },
         },
     },
     keys = {
