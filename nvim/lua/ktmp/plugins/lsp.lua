@@ -38,6 +38,7 @@ return {
         "clojure_lsp",
         "pico8_ls",
         "zls",
+        "marksman",
       },
       handlers = {
         function(server_name) -- default handler (optional)

@@ -5,3 +5,4 @@ vim.cmd([[colorscheme gruvbox]])
 
 vim.opt.clipboard = 'unnamedplus'
 
+vim.g.wiki_root = "~/Documents/Wiki"

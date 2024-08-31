@@ -11,6 +11,12 @@ vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
 -- YANK
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set('n', '<A-h>', '<<')
+vim.keymap.set('v', '<A-h>', '<gv')
+
+-- Move line or visually selected lines down
+vim.keymap.set('n', '<A-l>', '>>')
+vim.keymap.set('v', '<A-l>', '>gv')
 
 -- TABS
 vim.keymap.set("n", "<leader>tn", vim.cmd.tabnew, { desc = "Create a new tab" })
@@ -49,3 +55,10 @@ vim.keymap.set('n', '<C-h>', '<C-w>h')
 vim.keymap.set('n', '<C-j>', '<C-w>j')
 vim.keymap.set('n', '<C-k>', '<C-w>k')
 vim.keymap.set('n', '<C-l>', '<C-w>l')
+
+-- BUFFERS
+vim.keymap.set('n', '<leader>bn', ':bnext<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>bl', ':buffers<CR>:buffer<Space>', { noremap = true })
+vim.keymap.set('n', '<leader>bd', ':bdelete<CR>', { noremap = true, silent = true })
+
